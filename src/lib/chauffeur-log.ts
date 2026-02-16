@@ -14,7 +14,7 @@ export const chauffeurLogLinks = {
   // Fill this URL when a new Internal App Sharing build is generated.
   internalAppSharing: "",
   // Fill this URL when tester recruitment Google Form is created.
-  testerApplyForm: "",
+  testerApplyForm: "https://forms.gle/J8WejVP829pekAZX9",
   // Fill this URL when accessibility/log collection Google Form is created.
   accessibilityLogForm: "",
   // Fill this URL when feedback Google Form is created.
