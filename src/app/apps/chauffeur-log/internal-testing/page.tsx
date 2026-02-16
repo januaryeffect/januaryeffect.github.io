@@ -5,7 +5,7 @@ import { chauffeurLogCopy, chauffeurLogLinks } from "@/lib/chauffeur-log";
 
 export const metadata: Metadata = {
   title: "대리로그 내부테스터 모집 | January Effect",
-  description: "대리로그 내부테스터 모집 및 접근성 테스트 로그 수집 안내",
+  description: "대리로그 내부테스터 모집 및 내부테스트 참여 안내",
 };
 
 const testerApplyMailSubject = encodeURIComponent("[대리로그 내부테스터 신청]");
@@ -14,17 +14,8 @@ const testerApplyMailBody = encodeURIComponent(
 );
 const testerApplyMailTo = `mailto:${chauffeurLogCopy.feedbackEmail}?subject=${testerApplyMailSubject}&body=${testerApplyMailBody}`;
 
-const logReportMailSubject = encodeURIComponent("[대리로그 접근성 로그 제보]");
-const logReportMailBody = encodeURIComponent(
-  "앱 버전:\n기기 모델 / Android 버전:\n자동 입력 활성화 상태:\n문제 발생 화면/시점:\n재현 단계:\n예상 결과:\n실제 결과:\n발생 시각:\n첨부(스크린샷/영상):\n"
-);
-const logReportMailTo = `mailto:${chauffeurLogCopy.feedbackEmail}?subject=${logReportMailSubject}&body=${logReportMailBody}`;
-
 export default function ChauffeurLogInternalTestingPage() {
   const hasApplyForm = Boolean(chauffeurLogLinks.testerApplyForm);
-  const logFormUrl =
-    chauffeurLogLinks.accessibilityLogForm || chauffeurLogLinks.feedbackForm;
-  const hasLogForm = Boolean(logFormUrl);
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-16">
@@ -84,48 +75,6 @@ export default function ChauffeurLogInternalTestingPage() {
             <li>- `App not available`이 보이면 계정 초대 반영을 확인해 주세요.</li>
             <li>- 초대 후 반영까지 10~30분 정도 소요될 수 있습니다.</li>
           </ul>
-        </div>
-
-        <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-6 sm:p-8 mb-8">
-          <h2 className="text-xl font-semibold mb-4">3) 접근성 테스트 로그 제출</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            자동 입력 활성화 이슈를 재현할 수 있도록 아래 항목을 포함해 로그를
-            보내 주세요.
-          </p>
-
-          <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300 mb-5">
-            <li>- 앱 버전</li>
-            <li>- 기기 모델 / Android 버전</li>
-            <li>- 자동 입력(접근성) 활성화 여부</li>
-            <li>- 문제 발생 화면/단계와 재현 순서</li>
-            <li>- 예상 결과와 실제 결과</li>
-            <li>- 스크린샷 또는 짧은 영상</li>
-          </ul>
-
-          <div className="flex flex-wrap gap-3">
-            {hasLogForm ? (
-              <a
-                href={logFormUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-xl px-5 py-3 font-semibold bg-teal-600 text-white hover:bg-teal-700 transition-colors"
-              >
-                테스트 로그 폼 열기
-              </a>
-            ) : null}
-            <a
-              href={logReportMailTo}
-              className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
-            >
-              이메일로 로그 보내기
-            </a>
-            <Link
-              href={chauffeurLogLinks.feedbackPage}
-              className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
-            >
-              피드백 페이지
-            </Link>
-          </div>
         </div>
 
         <div className="text-sm">
