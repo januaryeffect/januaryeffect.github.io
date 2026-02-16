@@ -18,7 +18,7 @@ export const chauffeurLogLinks = {
   // Fill this URL when accessibility/log collection Google Form is created.
   accessibilityLogForm: "",
   // Fill this URL when feedback Google Form is created.
-  feedbackForm: "",
+  feedbackForm: "https://forms.gle/SqQXACLwNcsQnget7",
   privacyPolicy: "/privacy/chauffeur-log/",
   feedbackPage: "/apps/chauffeur-log/feedback/",
 } as const;
