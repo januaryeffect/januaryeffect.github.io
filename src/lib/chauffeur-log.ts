@@ -10,9 +10,14 @@ export const chauffeurLogCopy = {
 export const chauffeurLogLinks = {
   playInternalTest:
     "https://play.google.com/apps/testing/januaryeffect.chauffeurlog.app",
+  internalTestingPage: "/apps/chauffeur-log/internal-testing/",
   // Fill this URL when a new Internal App Sharing build is generated.
   internalAppSharing: "",
-  // Fill this URL when Google Form is created.
+  // Fill this URL when tester recruitment Google Form is created.
+  testerApplyForm: "",
+  // Fill this URL when accessibility/log collection Google Form is created.
+  accessibilityLogForm: "",
+  // Fill this URL when feedback Google Form is created.
   feedbackForm: "",
   privacyPolicy: "/privacy/chauffeur-log/",
   feedbackPage: "/apps/chauffeur-log/feedback/",

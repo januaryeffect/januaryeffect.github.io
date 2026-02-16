@@ -67,14 +67,12 @@ export default function ChauffeurLogPage() {
                   {chauffeurLogCopy.oneLiner}
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  <a
-                    href={chauffeurLogLinks.playInternalTest}
-                    target="_blank"
-                    rel="noreferrer"
+                  <Link
+                    href={chauffeurLogLinks.internalTestingPage}
                     className="inline-flex items-center rounded-xl px-5 py-3 font-semibold bg-teal-600 text-white hover:bg-teal-700 transition-colors"
                   >
-                    내부테스트 참여
-                  </a>
+                    내부테스터 모집/참여
+                  </Link>
                   {hasInternalAppSharing ? (
                     <a
                       href={chauffeurLogLinks.internalAppSharing}
@@ -92,6 +90,18 @@ export default function ChauffeurLogPage() {
                     피드백 보내기
                   </Link>
                 </div>
+                <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                  이미 초대된 계정이라면{" "}
+                  <a
+                    href={chauffeurLogLinks.playInternalTest}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:text-gray-700 dark:hover:text-gray-300"
+                  >
+                    내부테스트 참여 링크
+                  </a>
+                  로 바로 입장할 수 있습니다.
+                </p>
                 {!hasInternalAppSharing ? (
                   <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
                     현재 설치 링크는 내부테스트(옵트인) 방식으로 제공됩니다.

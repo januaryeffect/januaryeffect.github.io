@@ -112,6 +112,12 @@ export default function Home() {
                     소개 페이지
                   </Link>
                   <Link
+                    href="/apps/chauffeur-log/internal-testing/"
+                    className="inline-flex items-center rounded-lg px-4 py-2 font-semibold border border-teal-600 text-teal-700 dark:text-teal-300 hover:bg-teal-50 dark:hover:bg-teal-950/30 transition-colors"
+                  >
+                    내부테스터 모집
+                  </Link>
+                  <Link
                     href="/apps/chauffeur-log/feedback/"
                     className="inline-flex items-center rounded-lg px-4 py-2 font-semibold border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
                   >

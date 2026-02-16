@@ -83,6 +83,9 @@ export default function RootLayout({
                   <Link href="/apps/chauffeur-log/feedback/" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
                     대리로그 피드백
                   </Link>
+                  <Link href="/apps/chauffeur-log/internal-testing/" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
+                    대리로그 내부테스트
+                  </Link>
                   <Link href="/privacy/" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
                     개인정보처리방침
                   </Link>

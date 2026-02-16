@@ -53,6 +53,13 @@ export default function ChauffeurLogFeedbackPage() {
           >
             대리로그 소개 페이지로 돌아가기
           </Link>
+          <span className="mx-2 text-gray-400">|</span>
+          <Link
+            href={chauffeurLogLinks.internalTestingPage}
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            내부테스터 모집 페이지
+          </Link>
         </div>
       </div>
     </div>
