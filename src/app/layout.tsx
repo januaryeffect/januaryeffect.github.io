@@ -42,6 +42,9 @@ export default function RootLayout({
               January Effect
             </Link>
             <div className="flex items-center gap-6 text-sm">
+              <Link href="/apps/chauffeur-log/" className="hover:text-blue-600 transition-colors">
+                대리로그
+              </Link>
               <Link href="/privacy/" className="hover:text-blue-600 transition-colors">
                 개인정보처리방침
               </Link>
@@ -74,6 +77,12 @@ export default function RootLayout({
               <div>
                 <h3 className="font-bold mb-3">법적 고지</h3>
                 <div className="flex flex-col gap-1 text-sm">
+                  <Link href="/apps/chauffeur-log/" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
+                    대리로그 소개
+                  </Link>
+                  <Link href="/apps/chauffeur-log/feedback/" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
+                    대리로그 피드백
+                  </Link>
                   <Link href="/privacy/" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
                     개인정보처리방침
                   </Link>

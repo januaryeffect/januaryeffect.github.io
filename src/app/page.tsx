@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -80,6 +81,44 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 Flutter와 React Native를 활용한 크로스 플랫폼 앱 개발
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Section */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">출시 앱</h2>
+          <div className="max-w-3xl mx-auto rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-6 sm:p-8">
+            <div className="flex flex-col sm:flex-row items-center gap-5">
+              <Image
+                src="/apps/chauffeur-log/icon.png"
+                alt="대리로그 앱 아이콘"
+                className="w-20 h-20 rounded-2xl"
+                width={80}
+                height={80}
+              />
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="text-2xl font-bold mb-1">대리로그</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  운행의 시작과 마무리, 대리로그.
+                </p>
+                <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+                  <Link
+                    href="/apps/chauffeur-log/"
+                    className="inline-flex items-center rounded-lg px-4 py-2 font-semibold bg-teal-600 text-white hover:bg-teal-700 transition-colors"
+                  >
+                    소개 페이지
+                  </Link>
+                  <Link
+                    href="/apps/chauffeur-log/feedback/"
+                    className="inline-flex items-center rounded-lg px-4 py-2 font-semibold border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+                  >
+                    피드백 보내기
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
