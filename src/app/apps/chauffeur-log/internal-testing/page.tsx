@@ -129,7 +129,7 @@ export default function ChauffeurLogInternalTestingPage() {
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <figure className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-3">
                 <Image
-                  src="/apps/chauffeur-log/internal-testing/step-01-tester-page.jpeg"
+                  src="/apps/chauffeur-log/internal-testing/step-02-play-install.jpeg"
                   alt="Google Play 내부테스트 웹 페이지에서 You are a tester와 download it on Google Play 링크가 보이는 화면"
                   width={648}
                   height={1404}
@@ -149,7 +149,7 @@ export default function ChauffeurLogInternalTestingPage() {
               </figure>
               <figure className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-3">
                 <Image
-                  src="/apps/chauffeur-log/internal-testing/step-02-play-install.jpeg"
+                  src="/apps/chauffeur-log/internal-testing/step-01-tester-page.jpeg"
                   alt="Google Play 앱에서 내부테스트 앱 페이지와 설치 버튼이 보이는 화면"
                   width={648}
                   height={1404}
