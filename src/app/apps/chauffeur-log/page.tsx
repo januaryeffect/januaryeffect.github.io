@@ -39,6 +39,7 @@ const features = [
 
 export default function ChauffeurLogPage() {
   const hasInternalAppSharing = Boolean(chauffeurLogLinks.internalAppSharing);
+  const hasKakaoOpenChat = Boolean(chauffeurLogLinks.kakaoOpenChat);
 
   return (
     <div className="bg-white dark:bg-black">
@@ -89,6 +90,16 @@ export default function ChauffeurLogPage() {
                   >
                     피드백 보내기
                   </Link>
+                  {hasKakaoOpenChat ? (
+                    <a
+                      href={chauffeurLogLinks.kakaoOpenChat}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-yellow-300 text-yellow-900 bg-yellow-50 hover:bg-yellow-100 dark:border-yellow-700 dark:text-yellow-300 dark:bg-yellow-950/30 dark:hover:bg-yellow-950/50 transition-colors"
+                    >
+                      카카오톡 오픈채팅
+                    </a>
+                  ) : null}
                 </div>
                 <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
                   이미 초대된 계정이라면{" "}
@@ -105,6 +116,20 @@ export default function ChauffeurLogPage() {
                 {!hasInternalAppSharing ? (
                   <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
                     현재 설치 링크는 내부테스트(옵트인) 방식으로 제공됩니다.
+                  </p>
+                ) : null}
+                {hasKakaoOpenChat ? (
+                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                    신청/설치 중 문의는{" "}
+                    <a
+                      href={chauffeurLogLinks.kakaoOpenChat}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-gray-700 dark:hover:text-gray-300"
+                    >
+                      카카오톡 오픈채팅
+                    </a>
+                    에서 도와드립니다.
                   </p>
                 ) : null}
               </div>

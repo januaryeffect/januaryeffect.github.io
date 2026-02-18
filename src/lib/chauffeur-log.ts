@@ -4,7 +4,7 @@ export const chauffeurLogCopy = {
   oneLiner: "대리기사의 운행 기록과 정산을 한 번에 관리하는 앱",
   catchphrase: "운행의 시작과 마무리, 대리로그.",
   copyright: "© 2026 January Effect",
-  feedbackEmail: "contact@januryeffect.app",
+  feedbackEmail: "contact@januaryeffect.app",
 } as const;
 
 export const chauffeurLogLinks = {
@@ -14,11 +14,12 @@ export const chauffeurLogLinks = {
   // Fill this URL when a new Internal App Sharing build is generated.
   internalAppSharing: "",
   // Fill this URL when tester recruitment Google Form is created.
-  testerApplyForm: "https://forms.gle/J8WejVP829pekAZX9",
+  testerApplyForm: "https://forms.gle/g1ytvaDC7G4mTAbc9",
   // Fill this URL when accessibility/log collection Google Form is created.
   accessibilityLogForm: "",
   // Fill this URL when feedback Google Form is created.
   feedbackForm: "https://forms.gle/SqQXACLwNcsQnget7",
+  kakaoOpenChat: "https://open.kakao.com/o/p3G4LVgi",
   privacyPolicy: "/privacy/chauffeur-log/",
   feedbackPage: "/apps/chauffeur-log/feedback/",
 } as const;

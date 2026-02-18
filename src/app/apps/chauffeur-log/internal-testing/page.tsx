@@ -16,6 +16,7 @@ const testerApplyMailTo = `mailto:${chauffeurLogCopy.feedbackEmail}?subject=${te
 
 export default function ChauffeurLogInternalTestingPage() {
   const hasApplyForm = Boolean(chauffeurLogLinks.testerApplyForm);
+  const hasKakaoOpenChat = Boolean(chauffeurLogLinks.kakaoOpenChat);
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-16">
@@ -54,6 +55,21 @@ export default function ChauffeurLogInternalTestingPage() {
                 </a>
               </div>
             )}
+            {hasKakaoOpenChat ? (
+              <a
+                href={chauffeurLogLinks.kakaoOpenChat}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-yellow-300 text-yellow-900 bg-yellow-50 hover:bg-yellow-100 dark:border-yellow-700 dark:text-yellow-300 dark:bg-yellow-950/30 dark:hover:bg-yellow-950/50 transition-colors"
+              >
+                카카오톡 오픈채팅으로 문의하기
+              </a>
+            ) : null}
+            {hasKakaoOpenChat ? (
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                신청/초대 지연/설치 오류 문의는 오픈채팅이 가장 빠릅니다.
+              </p>
+            ) : null}
           </div>
         </div>
 
