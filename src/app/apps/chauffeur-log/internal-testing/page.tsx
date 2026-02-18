@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 import { chauffeurLogCopy, chauffeurLogLinks } from "@/lib/chauffeur-log";
 
@@ -101,6 +102,66 @@ export default function ChauffeurLogInternalTestingPage() {
           >
             Google Play 내부테스트 참여 링크 열기
           </a>
+          <div className="mt-5 rounded-xl border border-blue-200 dark:border-blue-900/60 bg-blue-50 dark:bg-blue-950/20 p-4 sm:p-5">
+            <h3 className="font-semibold mb-2">
+              링크를 연 뒤 다음 순서로 진행해 주세요
+            </h3>
+            <ol className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+              <li>
+                1) 웹 페이지에서{" "}
+                <code className="font-mono text-xs bg-white/70 dark:bg-black/50 px-1.5 py-0.5 rounded">
+                  You are a tester.
+                </code>{" "}
+                표시를 확인합니다.
+              </li>
+              <li>
+                2) 같은 화면의{" "}
+                <code className="font-mono text-xs bg-white/70 dark:bg-black/50 px-1.5 py-0.5 rounded">
+                  download it on Google Play
+                </code>{" "}
+                를 누릅니다.
+              </li>
+              <li>
+                3) Google Play 앱이 열리면 <strong>설치</strong> 버튼을 눌러
+                설치합니다.
+              </li>
+            </ol>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <figure className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-3">
+                <Image
+                  src="/apps/chauffeur-log/internal-testing/step-01-tester-page.jpeg"
+                  alt="Google Play 내부테스트 웹 페이지에서 You are a tester와 download it on Google Play 링크가 보이는 화면"
+                  width={648}
+                  height={1404}
+                  className="w-full h-auto rounded-lg"
+                />
+                <figcaption className="mt-2 text-xs text-gray-600 dark:text-gray-400">
+                  Step 1.{" "}
+                  <code className="font-mono text-[11px] bg-gray-100 dark:bg-gray-900 px-1 py-0.5 rounded">
+                    You are a tester.
+                  </code>{" "}
+                  확인 후{" "}
+                  <code className="font-mono text-[11px] bg-gray-100 dark:bg-gray-900 px-1 py-0.5 rounded">
+                    download it on Google Play
+                  </code>
+                  를 누르세요.
+                </figcaption>
+              </figure>
+              <figure className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-3">
+                <Image
+                  src="/apps/chauffeur-log/internal-testing/step-02-play-install.jpeg"
+                  alt="Google Play 앱에서 내부테스트 앱 페이지와 설치 버튼이 보이는 화면"
+                  width={648}
+                  height={1404}
+                  className="w-full h-auto rounded-lg"
+                />
+                <figcaption className="mt-2 text-xs text-gray-600 dark:text-gray-400">
+                  Step 2. Google Play 앱 화면으로 이동하면{" "}
+                  <strong>설치</strong> 버튼을 눌러 진행하세요.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
           <ul className="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
             <li>- `App not available`이 보이면 계정 초대 반영을 확인해 주세요.</li>
             <li>- 초대 후 반영까지 10~30분 정도 소요될 수 있습니다.</li>
