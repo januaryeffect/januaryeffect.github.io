@@ -125,6 +125,12 @@ export default function ChauffeurLogInternalTestingPage() {
                 3) Google Play 앱이 열리면 <strong>설치</strong> 버튼을 눌러
                 설치합니다.
               </li>
+              <li>
+                4) 앱 실행 후 메인 상단{" "}
+                <strong>`자동 입력 활성화`</strong> 배너의{" "}
+                <strong>`설정`</strong> 버튼으로 들어가 접근성 권한을{" "}
+                <strong>반드시 켜 주세요.</strong>
+              </li>
             </ol>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <figure className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-3">
@@ -136,7 +142,7 @@ export default function ChauffeurLogInternalTestingPage() {
                   className="w-full h-auto rounded-lg"
                 />
                 <figcaption className="mt-2 text-xs text-gray-600 dark:text-gray-400">
-                  Step 1.{" "}
+                  Step 1~2.{" "}
                   <code className="font-mono text-[11px] bg-gray-100 dark:bg-gray-900 px-1 py-0.5 rounded">
                     You are a tester.
                   </code>{" "}
@@ -156,10 +162,28 @@ export default function ChauffeurLogInternalTestingPage() {
                   className="w-full h-auto rounded-lg"
                 />
                 <figcaption className="mt-2 text-xs text-gray-600 dark:text-gray-400">
-                  Step 2. Google Play 앱 화면으로 이동하면{" "}
+                  Step 3. Google Play 앱 화면으로 이동하면{" "}
                   <strong>설치</strong> 버튼을 눌러 진행하세요.
                 </figcaption>
               </figure>
+            </div>
+            <figure className="mt-4 max-w-sm rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black p-3">
+              <Image
+                src="/apps/chauffeur-log/internal-testing/step-03-enable-auto-input.jpeg"
+                alt="대리로그 메인 화면 상단 자동 입력 활성화 배너와 설정 버튼 예시"
+                width={648}
+                height={1404}
+                className="w-full h-auto rounded-lg"
+              />
+              <figcaption className="mt-2 text-xs text-gray-600 dark:text-gray-400">
+                Step 4. 설치 후 앱을 실행해서 상단{" "}
+                <strong>자동 입력 활성화</strong> 배너의 <strong>설정</strong>을
+                눌러 권한을 켜 주세요.
+              </figcaption>
+            </figure>
+            <div className="mt-4 rounded-lg border border-emerald-200 dark:border-emerald-900/60 bg-emerald-50 dark:bg-emerald-950/20 px-4 py-3 text-sm text-emerald-900 dark:text-emerald-200">
+              자동 입력 활성화는 이번 내부테스트의 핵심 확인 항목입니다. 기능
+              검증을 위해 반드시 활성화 후 테스트를 진행해 주세요.
             </div>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
