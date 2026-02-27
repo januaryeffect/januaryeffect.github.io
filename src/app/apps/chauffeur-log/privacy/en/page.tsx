@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-export default function ChauffeurLogPrivacyRedirect() {
+export default function ChauffeurLogPrivacyEnPlaceholder() {
   const router = useRouter();
 
   useEffect(() => {
@@ -12,9 +12,8 @@ export default function ChauffeurLogPrivacyRedirect() {
 
   return (
     <div className="py-12 px-4 text-center">
-      <p className="text-gray-500">이동 중...</p>
+      <p className="text-gray-500">Redirecting to Korean version...</p>
       <noscript>
-        <meta httpEquiv="refresh" content="0;url=/apps/chauffeur-log/privacy/" />
         <a href="/apps/chauffeur-log/privacy/">대리로그 개인정보처리방침</a>
       </noscript>
     </div>

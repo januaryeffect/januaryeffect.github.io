@@ -22,6 +22,6 @@ export const chauffeurLogLinks = {
   // Fill this URL when feedback Google Form is created.
   feedbackForm: "https://forms.gle/SqQXACLwNcsQnget7",
   kakaoOpenChat: "https://open.kakao.com/o/p3G4LVgi",
-  privacyPolicy: "/privacy/chauffeur-log/",
+  privacyPolicy: "/apps/chauffeur-log/privacy/",
   feedbackPage: "/apps/chauffeur-log/feedback/",
 } as const;
