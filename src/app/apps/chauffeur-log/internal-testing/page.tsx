@@ -231,7 +231,7 @@ export default function ChauffeurLogInternalTestingPage() {
                       이미지를 채팅방에 올려 주세요. 스크린샷을 아래 인증
                       폼에 제출하면{" "}
                       <strong className="text-amber-700 dark:text-amber-400">
-                        편의점 이용권(5,000원)
+                        GS25 금액권(5,000원)
                       </strong>
                       을 카카오톡 선물하기로 보내 드립니다.
                     </p>
@@ -252,7 +252,7 @@ export default function ChauffeurLogInternalTestingPage() {
                       2주 동안 꾸준히 사용하시고 간단한 피드백(개선점,
                       좋았던 점)을 남겨 주시면{" "}
                       <strong className="text-amber-700 dark:text-amber-400">
-                        편의점 이용권(10,000원)
+                        GS25 금액권(10,000원)
                       </strong>
                       을 카카오톡 선물하기로 보내 드립니다.
                     </p>
@@ -271,7 +271,7 @@ export default function ChauffeurLogInternalTestingPage() {
             </a>
 
             <p className="mt-4 text-xs text-gray-500 dark:text-gray-500">
-              편의점 이용권은 인증 확인 후 카카오톡 선물하기로 발송됩니다.
+              GS25 금액권은 인증 확인 후 카카오톡 선물하기로 발송됩니다.
               오픈채팅 입장 필수. 1인 1회 참여 가능합니다.
             </p>
           </div>
