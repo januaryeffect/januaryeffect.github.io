@@ -192,6 +192,82 @@ export default function ChauffeurLogInternalTestingPage() {
           </ul>
         </div>
 
+        {chauffeurLogLinks.eventForm ? (
+          <div className="rounded-2xl border-2 border-amber-400 dark:border-amber-600 bg-amber-50 dark:bg-amber-950/20 p-6 sm:p-8 mb-6">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl" role="img" aria-label="gift">
+                🎁
+              </span>
+              <h2 className="text-xl font-semibold">
+                내부테스터 설치 이벤트
+              </h2>
+            </div>
+            <p className="text-gray-700 dark:text-gray-300 mb-5">
+              대리로그를 설치하고 실제 운행 기록을 공유해 주시면 메가커피
+              기프티콘을 드립니다!
+            </p>
+
+            <div className="space-y-4 mb-6">
+              <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4">
+                <div className="flex items-start gap-3">
+                  <span className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 text-sm font-bold">
+                    1
+                  </span>
+                  <div>
+                    <h3 className="font-semibold mb-1">
+                      설치 + 운행 기록 3건 + 공유 인증
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      앱을 설치하고, 운행 기록을 3건 이상 입력한 뒤, 공유
+                      이미지를 카톡 채팅방에 올려 주세요. 스크린샷을 아래
+                      인증 폼에 제출하면{" "}
+                      <strong className="text-amber-700 dark:text-amber-400">
+                        메가커피 기프티콘(2,000원)
+                      </strong>
+                      을 바로 보내 드립니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4">
+                <div className="flex items-start gap-3">
+                  <span className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-bold">
+                    2
+                  </span>
+                  <div>
+                    <h3 className="font-semibold mb-1">
+                      14일간 10건 이상 기록 + 피드백 1건
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      2주 동안 꾸준히 사용하시고 간단한 피드백(개선점,
+                      좋았던 점)을 남겨 주시면{" "}
+                      <strong className="text-amber-700 dark:text-amber-400">
+                        추가 기프티콘(3,000원)
+                      </strong>
+                      을 보내 드립니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href={chauffeurLogLinks.eventForm}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-full sm:w-auto justify-center items-center rounded-xl px-6 py-3 font-semibold bg-amber-500 text-white hover:bg-amber-600 transition-colors"
+            >
+              이벤트 인증 폼 제출하기
+            </a>
+
+            <p className="mt-4 text-xs text-gray-500 dark:text-gray-500">
+              기프티콘은 인증 확인 후 제출하신 이메일/연락처로 발송됩니다.
+              1인 1회 참여 가능합니다.
+            </p>
+          </div>
+        ) : null}
+
         <div className="text-sm">
           <Link
             href="/apps/chauffeur-log/"

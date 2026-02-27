@@ -17,6 +17,8 @@ export const chauffeurLogLinks = {
   testerApplyForm: "https://forms.gle/g1ytvaDC7G4mTAbc9",
   // Fill this URL when accessibility/log collection Google Form is created.
   accessibilityLogForm: "",
+  // Event verification form for internal tester reward program.
+  eventForm: "https://forms.gle/JiQkmivzQA8jTX5D7",
   // Fill this URL when feedback Google Form is created.
   feedbackForm: "https://forms.gle/SqQXACLwNcsQnget7",
   kakaoOpenChat: "https://open.kakao.com/o/p3G4LVgi",
