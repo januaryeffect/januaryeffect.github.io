@@ -203,8 +203,8 @@ export default function ChauffeurLogInternalTestingPage() {
               </h2>
             </div>
             <p className="text-gray-700 dark:text-gray-300 mb-5">
-              대리로그를 설치하고 실제 운행 기록을 공유해 주시면 메가커피
-              기프티콘을 드립니다!
+              대리로그를 설치하고 실제 운행 기록을 공유해 주시면 편의점
+              이용권을 드립니다!
             </p>
 
             <div className="space-y-4 mb-6">
@@ -215,16 +215,25 @@ export default function ChauffeurLogInternalTestingPage() {
                   </span>
                   <div>
                     <h3 className="font-semibold mb-1">
-                      설치 + 운행 기록 3건 + 공유 인증
+                      설치 + 오픈채팅 입장 + 운행 기록 3건 + 공유 인증
                     </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      앱을 설치하고, 운행 기록을 3건 이상 입력한 뒤, 공유
-                      이미지를 카톡 채팅방에 올려 주세요. 스크린샷을 아래
-                      인증 폼에 제출하면{" "}
+                      앱을 설치하고,{" "}
+                      <a
+                        href={chauffeurLogLinks.kakaoOpenChat}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-yellow-700 dark:text-yellow-400 underline"
+                      >
+                        카카오톡 오픈채팅
+                      </a>
+                      에 입장한 뒤, 운행 기록을 3건 이상 입력하고 공유
+                      이미지를 채팅방에 올려 주세요. 스크린샷을 아래 인증
+                      폼에 제출하면{" "}
                       <strong className="text-amber-700 dark:text-amber-400">
-                        메가커피 기프티콘(2,000원)
+                        편의점 이용권(5,000원)
                       </strong>
-                      을 바로 보내 드립니다.
+                      을 카카오톡 선물하기로 보내 드립니다.
                     </p>
                   </div>
                 </div>
@@ -243,9 +252,9 @@ export default function ChauffeurLogInternalTestingPage() {
                       2주 동안 꾸준히 사용하시고 간단한 피드백(개선점,
                       좋았던 점)을 남겨 주시면{" "}
                       <strong className="text-amber-700 dark:text-amber-400">
-                        추가 기프티콘(3,000원)
+                        편의점 이용권(10,000원)
                       </strong>
-                      을 보내 드립니다.
+                      을 카카오톡 선물하기로 보내 드립니다.
                     </p>
                   </div>
                 </div>
@@ -262,8 +271,8 @@ export default function ChauffeurLogInternalTestingPage() {
             </a>
 
             <p className="mt-4 text-xs text-gray-500 dark:text-gray-500">
-              기프티콘은 인증 확인 후 제출하신 이메일/연락처로 발송됩니다.
-              1인 1회 참여 가능합니다.
+              편의점 이용권은 인증 확인 후 카카오톡 선물하기로 발송됩니다.
+              오픈채팅 입장 필수. 1인 1회 참여 가능합니다.
             </p>
           </div>
         ) : null}
