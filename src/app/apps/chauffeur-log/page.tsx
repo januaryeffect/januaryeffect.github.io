@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   title: "대리로그 | January Effect",
   description:
     "대리운전 기사님을 위한 운행 기록 및 수입/지출 관리 앱, 대리로그 소개 페이지",
+  openGraph: {
+    title: "대리로그 — 운행의 시작과 마무리",
+    description:
+      "대리기사의 운행 기록과 정산을 한 번에 관리하는 앱. 자동 운행 기록, 앱별 통계, Google Drive 백업.",
+    type: "website",
+    locale: "ko_KR",
+    siteName: "January Effect",
+    images: [
+      {
+        url: "https://januaryeffect.app/apps/chauffeur-log/icon.png",
+        width: 512,
+        height: 512,
+        alt: "대리로그 앱 아이콘",
+      },
+    ],
+  },
 };
 
 const screenshots = [

@@ -7,6 +7,22 @@ export const metadata: Metadata = {
   title: "대리로그 공개 테스트 | January Effect",
   description:
     "대리로그 공개 테스트에 참여하고 피드백으로 앱을 함께 만들어 주세요.",
+  openGraph: {
+    title: "대리로그 — 공개 테스트 참여",
+    description:
+      "대리기사 전용 운행일지 앱. Google Play에서 설치하고 피드백을 남겨 주세요.",
+    type: "website",
+    locale: "ko_KR",
+    siteName: "January Effect",
+    images: [
+      {
+        url: "https://januaryeffect.app/apps/chauffeur-log/icon.png",
+        width: 512,
+        height: 512,
+        alt: "대리로그 앱 아이콘",
+      },
+    ],
+  },
 };
 
 export default function ChauffeurLogOpenTestingPage() {
