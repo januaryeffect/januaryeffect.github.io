@@ -8,18 +8,10 @@ export const chauffeurLogCopy = {
 } as const;
 
 export const chauffeurLogLinks = {
-  playInternalTest:
-    "https://play.google.com/apps/internaltest/4700283168808086780",
-  internalTestingPage: "/apps/chauffeur-log/internal-testing/",
-  // Fill this URL when a new Internal App Sharing build is generated.
-  internalAppSharing: "",
-  // Fill this URL when tester recruitment Google Form is created.
-  testerApplyForm: "https://forms.gle/g1ytvaDC7G4mTAbc9",
-  // Fill this URL when accessibility/log collection Google Form is created.
-  accessibilityLogForm: "",
-  // Event verification form for internal tester reward program.
+  playStore:
+    "https://play.google.com/store/apps/details?id=januaryeffect.chauffeurlog.app",
+  openTestingPage: "/apps/chauffeur-log/open-testing/",
   eventForm: "https://forms.gle/JiQkmivzQA8jTX5D7",
-  // Fill this URL when feedback Google Form is created.
   feedbackForm: "https://forms.gle/SqQXACLwNcsQnget7",
   kakaoOpenChat: "https://open.kakao.com/o/p3G4LVgi",
   privacyPolicy: "/apps/chauffeur-log/privacy/",

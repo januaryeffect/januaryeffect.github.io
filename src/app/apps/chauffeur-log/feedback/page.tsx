@@ -55,10 +55,10 @@ export default function ChauffeurLogFeedbackPage() {
           </Link>
           <span className="mx-2 text-gray-400">|</span>
           <Link
-            href={chauffeurLogLinks.internalTestingPage}
+            href={chauffeurLogLinks.openTestingPage}
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
-            내부테스터 모집 페이지
+            공개 테스트 참여
           </Link>
         </div>
       </div>

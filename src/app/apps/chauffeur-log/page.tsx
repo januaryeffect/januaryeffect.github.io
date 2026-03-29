@@ -32,13 +32,15 @@ const screenshots = [
 const features = [
   "운행 기록 관리: 날짜/시간/출발지/도착지/경유지/메모",
   "수입·지출 정산: 요금·수수료·교통비 등 항목별 기록",
-  "통계 리포트: 일별/월별 수익 확인",
-  "데이터 이전: 대리가계부(DCB) 데이터 마이그레이션",
+  "앱별 수입 통계: 카카오대리·티맵대리 등 앱별 분석",
+  "자동 운행 기록: 호출 앱 알림 감지 후 자동 기록 (베타)",
+  "통계 리포트: 일별/월별 수익 확인 및 이미지 공유",
+  "데이터 이전: 대리가계부·최강대리 데이터 마이그레이션",
   "백업/복원: Google Drive 연동",
+  "내보내기: CSV/Excel, 종합소득세 증빙 리포트",
 ];
 
 export default function ChauffeurLogPage() {
-  const hasInternalAppSharing = Boolean(chauffeurLogLinks.internalAppSharing);
   const hasKakaoOpenChat = Boolean(chauffeurLogLinks.kakaoOpenChat);
 
   return (
@@ -55,9 +57,14 @@ export default function ChauffeurLogPage() {
                 height={112}
               />
               <div className="text-center lg:text-left">
-                <p className="text-sm font-semibold text-teal-700 dark:text-teal-300 mb-2">
-                  Chauffeur Log
-                </p>
+                <div className="flex items-center gap-2 justify-center lg:justify-start mb-2">
+                  <p className="text-sm font-semibold text-teal-700 dark:text-teal-300">
+                    Chauffeur Log
+                  </p>
+                  <span className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300">
+                    공개 테스트
+                  </span>
+                </div>
                 <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3">
                   {chauffeurLogCopy.appNameKo}
                 </h1>
@@ -68,22 +75,20 @@ export default function ChauffeurLogPage() {
                   {chauffeurLogCopy.oneLiner}
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  <Link
-                    href={chauffeurLogLinks.internalTestingPage}
+                  <a
+                    href={chauffeurLogLinks.playStore}
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center rounded-xl px-5 py-3 font-semibold bg-teal-600 text-white hover:bg-teal-700 transition-colors"
                   >
-                    내부테스터 모집/참여
+                    Google Play에서 설치
+                  </a>
+                  <Link
+                    href={chauffeurLogLinks.openTestingPage}
+                    className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-teal-600 text-teal-700 dark:text-teal-300 hover:bg-teal-50 dark:hover:bg-teal-950/30 transition-colors"
+                  >
+                    공개 테스트 참여 안내
                   </Link>
-                  {hasInternalAppSharing ? (
-                    <a
-                      href={chauffeurLogLinks.internalAppSharing}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-teal-600 text-teal-700 dark:text-teal-300 hover:bg-teal-50 dark:hover:bg-teal-950/30 transition-colors"
-                    >
-                      빠른 설치(IAS)
-                    </a>
-                  ) : null}
                   <Link
                     href={chauffeurLogLinks.feedbackPage}
                     className="inline-flex items-center rounded-xl px-5 py-3 font-semibold border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
@@ -102,36 +107,9 @@ export default function ChauffeurLogPage() {
                   ) : null}
                 </div>
                 <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                  이미 초대된 계정이라면{" "}
-                  <a
-                    href={chauffeurLogLinks.playInternalTest}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline hover:text-gray-700 dark:hover:text-gray-300"
-                  >
-                    내부테스트 참여 링크
-                  </a>
-                  로 바로 입장할 수 있습니다.
+                  현재 공개 테스트 중입니다. 써보시고 의견 남겨 주시면 앱 개선에
+                  바로 반영합니다.
                 </p>
-                {!hasInternalAppSharing ? (
-                  <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                    현재 설치 링크는 내부테스트(옵트인) 방식으로 제공됩니다.
-                  </p>
-                ) : null}
-                {hasKakaoOpenChat ? (
-                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                    신청/설치 중 문의는{" "}
-                    <a
-                      href={chauffeurLogLinks.kakaoOpenChat}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="underline hover:text-gray-700 dark:hover:text-gray-300"
-                    >
-                      카카오톡 오픈채팅
-                    </a>
-                    에서 도와드립니다.
-                  </p>
-                ) : null}
               </div>
             </div>
           </div>
