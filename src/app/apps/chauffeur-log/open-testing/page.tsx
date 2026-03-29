@@ -197,6 +197,7 @@ export default function ChauffeurLogOpenTestingPage() {
             <p className="mt-4 text-xs text-gray-500 dark:text-gray-500">
               GS25 금액권은 인증 확인 후 카카오톡 선물하기로 발송됩니다.
               오픈채팅 입장 필수. 1인 1회 참여 가능합니다.
+              본 이벤트는 금액권 소진 시 사전 고지 없이 종료될 수 있습니다.
             </p>
           </div>
         ) : null}
