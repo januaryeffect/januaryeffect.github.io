@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     siteName: "January Effect",
     images: [
       {
-        url: "https://januaryeffect.app/apps/chauffeur-log/icon.png",
-        width: 512,
-        height: 512,
-        alt: "대리로그 앱 아이콘",
+        url: "https://januaryeffect.app/apps/chauffeur-log/og-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "대리로그 — 운행의 시작과 마무리",
       },
     ],
   },
