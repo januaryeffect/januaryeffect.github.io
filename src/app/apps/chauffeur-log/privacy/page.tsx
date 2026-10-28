@@ -21,7 +21,7 @@ export default function ChauffeurLogPrivacyPolicy() {
         </div>
 
         <p className="text-gray-600 dark:text-gray-400 mb-8">
-          시행일: 2026년 2월 23일
+          시행일: 2026년 10월 28일
         </p>
 
         <p>
@@ -78,9 +78,9 @@ export default function ChauffeurLogPrivacyPolicy() {
               <td>Android</td>
             </tr>
             <tr>
-              <td>사용 통계</td>
-              <td>Firebase Analytics를 통해 수집되는 앱 사용 패턴 (선택적)</td>
-              <td>Android</td>
+              <td>앱 사용 기록</td>
+              <td>앱을 연 날 수, 공유 기능 사용 횟수(받은 앱은 카카오톡/기타로만 구분), 앱 화면에서 찍은 스크린샷 횟수(이미지는 수집하지 않음). 자동 캡처 로그에 포함되어 전송 (선택적)</td>
+              <td>Android 전용</td>
             </tr>
           </tbody>
         </table>
@@ -135,7 +135,7 @@ export default function ChauffeurLogPrivacyPolicy() {
             </tr>
             <tr>
               <td>서비스 품질 향상</td>
-              <td>사용 통계</td>
+              <td>앱 사용 기록</td>
             </tr>
           </tbody>
         </table>
@@ -223,12 +223,6 @@ export default function ChauffeurLogPrivacyPolicy() {
               <td>앱 충돌 보고 및 안정성 개선</td>
               <td>충돌 로그, 기기 정보</td>
             </tr>
-            <tr>
-              <td>Firebase Analytics</td>
-              <td>Google LLC</td>
-              <td>앱 사용 통계 (선택적)</td>
-              <td>이벤트 데이터, 기기 정보</td>
-            </tr>
           </tbody>
         </table>
         <p>각 서비스의 개인정보처리방침:</p>
@@ -315,7 +309,7 @@ export default function ChauffeurLogPrivacyPolicy() {
 
         <h3>3. 선택적 데이터 수집 거부</h3>
         <ul>
-          <li>Firebase Analytics 데이터 수집은 선택적이며, 앱 설정에서 거부할 수 있습니다.</li>
+          <li>앱 사용 기록은 자동 캡처 로그에 포함되어 전송되며, 앱 설정 &gt; 이벤트 로그에서 로그 전송을 끄면 수집되지 않습니다.</li>
         </ul>
 
         <h2>제8조 (개인정보의 안전성 확보 조치)</h2>
@@ -409,8 +403,9 @@ export default function ChauffeurLogPrivacyPolicy() {
 
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
           <p className="text-sm text-gray-500">
-            <strong>시행일자</strong>: 2026년 2월 23일<br />
-            <strong>버전</strong>: 1.0
+            <strong>시행일자</strong>: 2026년 10월 28일<br />
+            <strong>버전</strong>: 1.1<br />
+            <strong>변경 이력</strong>: 1.1(2026-10-28) 사용 통계 항목을 실제 수집 방식(자동 캡처 로그에 포함되는 앱 사용 기록)으로 정정하고, 앱에 포함되지 않은 Firebase Analytics 기재를 삭제. 1.0(2026-02-23) 최초 시행.
           </p>
           <p className="text-sm text-gray-500 mt-4">
             본 개인정보처리방침에 대한 문의사항은{" "}
